@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: sicflux-hvac
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
